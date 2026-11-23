@@ -1,0 +1,61 @@
+[
+    {
+        "id": "1068",
+        "title": "Weird Algorithm",
+        "chapter": "Introductory Problems",
+        "topics": [
+            "Simulation",
+            "Math",
+            "Data Types"
+        ],
+        "constraints": "1 <= n <= 10^6",
+        "summary": "Start with n. If even, divide by 2. If odd, multiply by 3 and add 1. Repeat until n is 1.",
+        "common_pitfalls": [
+            "Using 32-bit int instead of 64-bit long long (intermediate values exceed 2^31 - 1 for inputs like n = 113383).",
+            "Forgetting to print the final 1."
+        ],
+        "related_ids": [
+            "1083",
+            "1069"
+        ]
+    },
+    {
+        "id": "1083",
+        "title": "Missing Number",
+        "chapter": "Introductory Problems",
+        "topics": [
+            "Math",
+            "Bit Manipulation",
+            "XOR"
+        ],
+        "constraints": "2 <= n <= 2 * 10^5",
+        "summary": "Given all numbers between 1 and n except one, find the missing number.",
+        "common_pitfalls": [
+            "Integer overflow when computing n * (n + 1) / 2 using 32-bit int.",
+            "Using O(n log n) sorting when O(n) math or XOR is cleaner."
+        ],
+        "related_ids": [
+            "1068",
+            "1094"
+        ]
+    },
+    {
+        "id": "1069",
+        "title": "Repetitions",
+        "chapter": "Introductory Problems",
+        "topics": [
+            "Strings",
+            "Linear Scan"
+        ],
+        "constraints": "1 <= n <= 10^6",
+        "summary": "Given a DNA string (A, C, G, T), find the length of the longest substring containing only one type of character.",
+        "common_pitfalls": [
+            "Forgetting to update the maximum answer when the longest streak ends at the very last character of the string.",
+            "Initializing the current streak counter to 0 instead of 1."
+        ],
+        "related_ids": [
+            "1068",
+            "1094"
+        ]
+    }
+]
